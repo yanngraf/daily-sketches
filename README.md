@@ -2,7 +2,7 @@
 My regular experiments with code.
 Open-sourced and public
 
-Usually those are published on [instgram](https://www.instagram.com/yanngraf/)
+Usually those are published on [instagram](https://www.instagram.com/yanngraf/)
 
 
 ## sketches 
