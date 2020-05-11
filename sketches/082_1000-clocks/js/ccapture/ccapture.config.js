@@ -8,7 +8,7 @@ let fps = 30;
 
 
 // duration in milliseconds
-var duration = 18000;
+var duration = 6000; // 6000 => 6 seconds
 
 // the canvas capturer instance
 var capturer = new CCapture({ format: 'png', framerate: fps });
