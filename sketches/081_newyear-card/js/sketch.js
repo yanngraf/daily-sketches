@@ -4,7 +4,7 @@ let noiseVal;
 let counter = 0;
 
 let history = [];
-let word = ['G','O','O','D','y','e','a','r'];
+
 
 function setup() {
   createCanvas(800, 800);
