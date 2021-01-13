@@ -1,7 +1,7 @@
 // --------------- for exporting video/GIF
 
 // 0 = don't capture, 1 = RECODRD / Capture
-let capturerState = 1;
+let capturerState = 0;
 
 // the frame rate (frames per second)
 let fps = 60;
