@@ -43,9 +43,20 @@ Combing all the images into a film sequence
 
 Note:
 To make a lighter version
-`ffmpeg -r 30 -f image2 -i "%07d.png" -s 1080:1080 -vcodec libx264 -crf **27** -pix_fmt yuv420p output.mp4`
+`ffmpeg -r 30 -f image2 -i "%07d.png" -s 1080:1080 -vcodec libx264 -crf 27 -pix_fmt yuv420p output.mp4`
 
 ## Loop the file
 
 1. Create the reversed version `ffmpeg -i output.mp4 -vf reverse reversed.mp4`
 2. Combine (join) both file `ls output.mp4 reversed.mp4 | perl -ne 'print "file $_"' | ffmpeg -protocol_whitelist file,tcp,http,pipe -f  concat -i - -c copy joined_loop.mp4`
+
+
+
+
+# Publishing the 
+
+
+1. Open "android file transfer" - when the phone is connected.
+2. Drop the videos in the "video" fold
+3. Open insta
+4. Copy hashtags from https://keep.google.com/
