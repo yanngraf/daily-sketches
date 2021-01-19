@@ -1,7 +1,7 @@
 // --------------- for exporting video/GIF
 
 // 0 = don't capture, 1 = RECODRD / Capture
-let capturerState = 0;
+let capturerState = 1;
 
 // the frame rate (frames per second)
 let fps = 60;
@@ -11,7 +11,7 @@ let fps = 60;
 var duration = 6000; // 6000 => 6 seconds
 
 // the canvas capturer instance
-var capturer = new CCapture({ format: 'svg', framerate: fps });
+var capturer = new CCapture({ format: 'png', framerate: fps });
 
 // needed to subtract initial millis before first draw to 
 // begin at t=0.

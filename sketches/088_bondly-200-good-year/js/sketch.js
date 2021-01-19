@@ -5,8 +5,8 @@ var drawing = false;
 var gui, params, params2;
 var anchorX, anchorY;
 
-var firstname = "Good";
-var lastname = "START";
+var firstname = "Hey";
+var lastname = "Jerome";
 
 // To draw the pointer in circle
 var r;		//radius
@@ -45,7 +45,7 @@ function setup(){
   frameRate(60);
   var canvasWidth = 1080;
   var canvasHeight = 1080;
-  createCanvas(canvasWidth, canvasHeight);
+  createCanvas(canvasWidth, canvasHeight, SVG);
   //myCanvas.parent("idnameofdiv");
 
   background(230,230,230)
@@ -59,9 +59,9 @@ function setup(){
 
   getPoints();
 
-  // --------------- for exporting video/GIF
-  capturerSetup ();
-  // --------------- for exporting video/GIF
+//   // --------------- for exporting video/GIF
+//   capturerSetup ();
+//   // --------------- for exporting video/GIF
 
 }
 
@@ -113,9 +113,9 @@ function draw(){
   //increase angle by step size
   angle = angle + step;
 
-  // --------------- for exporting video/GIF
-  capturerDraw ();
-  // --------------- for exporting video/GIF
+//   // --------------- for exporting video/GIF
+//   capturerDraw ();
+//   // --------------- for exporting video/GIF
   
 }
 
@@ -157,3 +157,12 @@ var Parameters2 = function(){
     this.xoffset = 10
     this.yoffset = 220
 }
+
+
+// Export to SVG function
+function keyTyped() {
+    if (key === "j") {
+      noLoop();
+      save("mySVG.svg");
+    } 
+  }

@@ -50,7 +50,7 @@ function setup(){
   frameRate(60);
   var canvasWidth = 1080;
   var canvasHeight = 1080;
-  createCanvas(canvasWidth, canvasHeight);
+  createCanvas(canvasWidth, canvasHeight, SVG);
   //myCanvas.parent("idnameofdiv");
 
   background(230,230,230)
